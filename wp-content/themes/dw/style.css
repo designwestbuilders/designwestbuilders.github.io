@@ -1,0 +1,260 @@
+/*
+Theme Name: Design West Builders
+Author: Julie Wills | Thread Studio Design
+Author url: http://www.threadstudiodesign.com
+Version: 1.0
+Description: A custom wordpress theme built by Julie Wills | <a href="http://threadstudiodesign.com" target="_blank">Thread Studio Web Design</a> for Design West Builders, Arlee, MT.
+*/
+
+
+
+/*---------------------------------------Global Styles------------------------------------------*/
+
+
+html {
+	height: 100%;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	min-width: 1100px;
+	color: #333;
+}
+
+.hide {display: none;}
+
+p {
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+
+img, a img {
+	border: none;	
+}
+
+/*---------------------------------------General Site Layout------------------------------------------*/
+
+#topblock {
+	width: 100%;
+	background-color: #FFF;
+	height: 10%;	
+}
+
+
+#outer {
+	position: relative;
+	width: 100%;
+	height: 90%;
+	overflow: hidden;
+}
+
+#header {
+	width: 1000px;
+	height: 309px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#triangle {
+	background-image: url(/wp-content/themes/dw/images/graphic_elements/logo_graphic.png);
+	background-repeat: no-repeat;	
+	background-position: -1px 0;	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 139px;
+	height: 309px;
+	z-index: 20;
+}
+
+a#logo {
+	width: 1000px;
+	height: 95px;	
+	display: block;
+	background-image: url(/wp-content/themes/dw/images/graphic_elements/logo_DW.png);
+	background-position: 140px 0px;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 112px;
+
+}
+
+#greyblock {
+	width: 100%;
+	height: 100%;	
+	margin-top: -102px;
+	background-color: #CCC;
+	position: relative;
+	z-index: 1;
+	border-top: 3px solid #FF8000;
+}
+
+#main {
+	position: relative;
+	margin: 0px auto;
+	width: 1000px;
+	height: 100%;
+}
+
+#contentwrap {
+	width: 860px;
+	margin-left: 138px;
+	border-left: 3px solid #FF8000;
+	height: 100%;	
+	position: relative;
+}
+
+#pagecontent {
+	width: 860px;
+	height: 331px;
+	position: relative;
+	z-index: 50;
+}
+
+#textground {
+	width: 860px;
+	height: 330px;
+	background-color: #EEE;	
+}
+
+.text {
+	float: right;
+	width: 395px;
+	padding-left: 40px;
+	padding-top: 35px;
+	height: 295px;
+	border-right: 1px solid #F27207;
+	border-bottom: 1px solid #F27207;
+	overflow-y: scroll;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.text a {
+	color: #333;
+	text-decoration: underline;	
+}
+
+.text a:hover, .text a:active {color: #F27207;}
+
+ul#service_list {
+	float: right;
+	width: 355px;
+	padding: 0;
+	padding-right: 40px;
+}
+
+ul#service_list li {
+	margin-left: 18px;
+	padding-top: 5px;
+	font-size: 15px;
+}
+
+#contacttext p {margin-bottom: 20px; font-size: 14px;}
+
+
+/*---------------------------------------Site Navigation------------------------------------------*/
+
+ul#nav {
+	position: relative;
+	width: 405px;
+	height: 30px;
+	float: right;
+	padding: 10px 0px 0 0;
+	z-index: 100;
+}
+
+ul#nav li {
+	float: left;
+	list-style-type: none;	
+	width: 135px;
+}
+
+ul#nav li a {
+	display: block;
+	height: 30px;
+	width: 100%;
+	background-position: 70px 5px;
+	background-repeat: no-repeat;
+}
+
+ul#nav li#services a {background-image: url(/wp-content/themes/dw/images/graphic_elements/services.png);}
+ul#nav li#images a {background-image: url(/wp-content/themes/dw/images/graphic_elements/images.png);}
+ul#nav li#contact a {background-image: url(/wp-content/themes/dw/images/graphic_elements/contact.png);}
+
+ul#nav li a:hover, ul#nav li a:active, ul#nav li.current_page_item a {background-position: 70px -21px;}
+
+ul#nav li ul {
+	position: absolute;
+	bottom: 30px;
+	padding: 6px 0 0 8px;
+	border-right: 2px solid #F27207;
+	margin-left: -26px;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	visibility: hidden;
+	background-color: #CCC;
+}
+
+ul#nav li:hover ul {visibility: visible;}
+
+ul#nav li ul li {
+	float: right;
+	clear: both;
+	text-align: right;
+	height: 20px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 8px 8px 4px 5px;
+	width: 149px;
+}
+
+ul#nav li#images ul li a {
+	background-image: none;
+	text-decoration: none;
+	color: #333;
+}
+
+ul#nav li#images ul li a:hover, ul#nav li#images ul li a:active {color: #F27207;}
+
+
+/*---------------------------------------Images Pages Styling------------------------------------------*/
+
+#dw_gallery {
+	width: 900px;
+	height: 335px;
+	overflow-y: scroll;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+#dw_gallery #gallery-1 .gallery-item {
+	float: left;
+	margin: 0 15px 12px 0;
+	width: 160px;
+}
+
+#dw_gallery a {
+	border: none;
+	display: block;
+	width: 160px;
+	height: 160px;	
+}
+
+#dw_gallery a img {border: none;}
+
+#caption {
+	font-size: 13px;
+	font-style: italic;	
+	position: absolute;
+	top: 340px;
+	left: 10px;
+}
+			
+			
